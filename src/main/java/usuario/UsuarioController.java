@@ -1,6 +1,5 @@
 package usuario;
 
-
 import javax.transaction.Transactional;
 import javax.validation.Valid;
 
@@ -26,7 +25,7 @@ public class UsuarioController {
 
     @InitBinder
     public void init(WebDataBinder binder) {
-        binder.addValidators(impedeEmailDuplicado);
+    	binder.addValidators(impedeEmailDuplicado);
     }
 
 
